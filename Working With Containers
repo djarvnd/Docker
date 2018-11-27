@@ -1,0 +1,27 @@
+Let's start running the containers
+docker ps
+You can run containers in Interactive & Detached/Background Modes
+Run a CentOS container in Interactive Mode
+docker run -it centos
+The above command will pull the CentOs image
+Run the centos image as a container
+Then will start a bash shell inside that container
+-i asks to keep the input open
+-t asks the container to assign a terminal to it
+which is why we have the bash shell opened after the run command completes
+Once you exit from container, the container is stopped
+
+
+
+Managing Containers
+
+Let's manage the containers
+docker ps
+docker ps -a
+To stop the container
+docker stop <container-id>  or <container-name>
+docker rm <container-id>  or <container-name>
+To name the container
+docker run -dt --name container1 ubuntu
+docker run -dt --name container2 --hostname web ubuntu
+
