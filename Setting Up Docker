@@ -1,0 +1,14 @@
+Installation Script
+https://get.docker.com/
+
+curl -fsSL get.docker.com -o get-docker.sh
+sh get-docker.sh
+To run the containers without sudo access, add the current user to docker group
+usermod -aG docker user-name
+docker version { only client is up, we need to start the daemon}
+sudo systemctl start docker
+docker version
+docker info
+Once docker is up and running, test the installation by running the simple Docker image
+docker images (or) docker image ls
+docker ps (or) docker container ls
